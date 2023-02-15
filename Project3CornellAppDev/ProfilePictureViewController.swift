@@ -98,6 +98,7 @@ class ProfilePictureViewController: UIViewController {
         saveButton.setTitle("Save", for: .normal)
         saveButton.setTitleColor(UIColor(red: 0.47, green: 0.221, blue: 1, alpha: 1), for: .normal)
         saveButton.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
+        saveButton.titleLabel?.font = UIFont(name: "Roboto-Regular", size: 14)
         saveButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(saveButton)
         

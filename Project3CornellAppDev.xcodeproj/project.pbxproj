@@ -13,6 +13,7 @@
 		4C3D35B5299BB42E00F35034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D35B4299BB42E00F35034 /* Assets.xcassets */; };
 		4C3D35B8299BB42E00F35034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3D35B6299BB42E00F35034 /* LaunchScreen.storyboard */; };
 		4C3D35C0299CF5A200F35034 /* ProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D35BF299CF5A200F35034 /* ProfilePictureViewController.swift */; };
+		4C3D35C2299D2E5100F35034 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3D35C1299D2E5100F35034 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4C3D35B7299BB42E00F35034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3D35B9299BB42E00F35034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3D35BF299CF5A200F35034 /* ProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureViewController.swift; sourceTree = "<group>"; };
+		4C3D35C1299D2E5100F35034 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,6 @@
 		4C3D359F299BB42C00F35034 = {
 			isa = PBXGroup;
 			children = (
-				4C3D35BF299CF5A200F35034 /* ProfilePictureViewController.swift */,
 				4C3D35AA299BB42C00F35034 /* Project3CornellAppDev */,
 				4C3D35A9299BB42C00F35034 /* Products */,
 			);
@@ -60,6 +61,8 @@
 				4C3D35AB299BB42C00F35034 /* AppDelegate.swift */,
 				4C3D35AD299BB42C00F35034 /* SceneDelegate.swift */,
 				4C3D35AF299BB42C00F35034 /* ViewController.swift */,
+				4C3D35BF299CF5A200F35034 /* ProfilePictureViewController.swift */,
+				4C3D35C1299D2E5100F35034 /* ContactViewController.swift */,
 				4C3D35B4299BB42E00F35034 /* Assets.xcassets */,
 				4C3D35B6299BB42E00F35034 /* LaunchScreen.storyboard */,
 				4C3D35B9299BB42E00F35034 /* Info.plist */,
@@ -141,6 +144,7 @@
 				4C3D35C0299CF5A200F35034 /* ProfilePictureViewController.swift in Sources */,
 				4C3D35AC299BB42C00F35034 /* AppDelegate.swift in Sources */,
 				4C3D35AE299BB42C00F35034 /* SceneDelegate.swift in Sources */,
+				4C3D35C2299D2E5100F35034 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

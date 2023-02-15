@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var imageName = ["Avatar1", "Avatar2", "Avatar3", "Avatar4", "Avatar5", "Avatar6"]
     var currentIndex = 0
     
+    var editbutton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "My Profile"
@@ -39,6 +41,13 @@ class ViewController: UIViewController {
         
         view.addSubview(profilePicture)
         view.addSubview(profilepictureMask)
+        
+        editbutton.setTitle("EDIT MY PROFILE >", for: .normal)
+        editbutton.setTitleColor(UIColor(red: 0.47, green: 0.221, blue: 1, alpha: 1), for: .normal)
+        editbutton.titleLabel?.font = UIFont(name: "Roboto-Bold", size: 12)
+        editbutton.addTarget(self, action: #selector(editButtonTapped), for: .touchUpInside)
+        editbutton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(editbutton)
         setUpConstraints()
         
         
@@ -47,6 +56,11 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         profilepictureMask.layer.cornerRadius = profilepictureMask.bounds.height/2
         
+    }
+    
+    @objc func editButtonTapped(){
+        let contactVC = ContactViewController()
+        navigationController?.pushViewController(contactVC, animated: true)
     }
     
     func setUpConstraints(){
@@ -62,6 +76,11 @@ class ViewController: UIViewController {
             profilepictureMask.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             profilepictureMask.heightAnchor.constraint(equalToConstant: 220),
             profilepictureMask.widthAnchor.constraint(equalToConstant: 220)
+        ])
+        
+        NSLayoutConstraint.activate([
+           editbutton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+           editbutton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
         ])
     }
     
@@ -81,3 +100,5 @@ extension ViewController: MainImageChangeDelgate{
         profilePicture.image = UIImage(named: imageName[index])
     }
 }
+
+
