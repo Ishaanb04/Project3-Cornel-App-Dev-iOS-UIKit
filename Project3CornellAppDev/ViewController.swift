@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     var imageName = ["Avatar1", "Avatar2", "Avatar3", "Avatar4", "Avatar5", "Avatar6"]
     var currentIndex = 0
     
-    var currentName = "Add Name"
-    var currentPortFolio = "sample.com"
+    var currentName = "Jamie Gonzalez   "
+    var currentPortFolio = "https://jamiegonzalez.me"
     var currentYear = 1
-    var currentAbout = "About Me........"
+    var currentAbout = "Hi I’m Jamie and I enjoy skiing, sledding, and squirrel watching."
     
     var editbutton = UIButton()
     
@@ -100,6 +100,8 @@ class ViewController: UIViewController {
         about.backgroundColor =  UIColor(red: 0.898, green: 0.898, blue: 0.898, alpha: 1)
         about.contentInset = UIEdgeInsets(top: 10, left: 25, bottom: 10, right: 25)
         about.font = UIFont(name: "Roboto-Regular", size: 16)
+        about.textColor = UIColor(red: 0.708, green: 0.708, blue: 0.708, alpha: 1)
+        about.text = currentAbout
         about.translatesAutoresizingMaskIntoConstraints = false
         about.isEditable = false
         view.addSubview(about)
